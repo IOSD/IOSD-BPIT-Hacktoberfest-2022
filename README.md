@@ -97,6 +97,8 @@ git push origin <your-branch-name>
 
 ### Fasten your seat belts and start hacking!
 ## 🔗 Links
+
 [![IOSD](https://img.shields.io/static/v1?label=IOSD&message=IOSD Official Website&color=blue)](https://iosd.tech/)
+
 [![LinkedIn](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/iosdorg/mycompany/)
 
