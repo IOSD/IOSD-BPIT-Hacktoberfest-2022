@@ -1,11 +1,11 @@
 <!-- ![Untitled_design__2_-removebg-preview](https://user-images.githubusercontent.com/91693371/193308607-66c30a07-1dac-4863-aa9b-03cc5f851a17.png) -->
 
 <p align="center">
-      <img width="500" alt="IOSD BPIT"  src="https://user-images.githubusercontent.com/91693371/193308607-66c30a07-1dac-4863-aa9b-03cc5f851a17.png">
-      <img width="500" alt="Hfest-Logo-2-Color-Manga@2x" src="https://user-images.githubusercontent.com/91693371/193301194-289038e0-112e-4c64-aa15-c5717d6e6dae.png">  
+      <img width="300" alt="IOSD BPIT"  src="https://user-images.githubusercontent.com/91693371/193308607-66c30a07-1dac-4863-aa9b-03cc5f851a17.png">
+      <img width="300" alt="Hfest-Logo-2-Color-Manga@2x" src="https://user-images.githubusercontent.com/91693371/193301194-289038e0-112e-4c64-aa15-c5717d6e6dae.png">  
 </p>
 
-<h1 align='center'> GDSC BPIT Hacktoberfest 2022 </h1>
+<h1 align='center'> Hacktoberfest 2022 - IOSD BPIT </h1>
 
 ## About Hacktoberfest
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 Hacktoberfest is DigitalOcean's Annual Event that encourages people to contribute to Open-Source throughout the month of October. HACKTOBERFEST IS FOR EVERYONE. WHETHER IT’S YOUR FIRST TIME—OR YOUR NINTH—IT’S ALMOST TIME TO HACK OUT FOUR PRISTINE PULL/MERGE REQUESTS AND COMPLETE YOUR MISSION FOR OPEN SOURCE.
 
-## What Hot in Hacktoberfest 2022?
+## What's Unique in Hacktoberfest 2022?
 Hacktoberfest welcomes people of all experience level to participate, and low-code and non-code contributions are fantastic choices for folks who don’t have a lot of technical knowledge. Here are some examples of ways you can contribute to open-source projects:
 https://hacktoberfest.com/about/
 
@@ -36,9 +36,10 @@ To deploy the project, follow the steps below
 
 ### Step 1 : Fork the Repository
 * To get started with your contributions, fork this HacktoberFest Repository. To do so, click the Fork button, just like the one shown below:
+
 ![Fork repo image](https://user-images.githubusercontent.com/84663829/193277119-27613f65-1e7e-4f7f-b9fb-4fe3dca131a8.png)
 
-![adbsdbashd](https://user-images.githubusercontent.com/84663829/193288980-8c91bfb3-3213-40ee-abc2-02acaefa704f.png)
+![sjdjasbdas](https://user-images.githubusercontent.com/91693371/193312882-1341b0b9-7dc4-4523-9621-8c467f9f6a02.png)
 
 ### Step 2 : Clone the Repository
 * To start working on your Forked Repository, Clone the Repository in your Local System. Run the following code in the Command Terminal, directed towards your prefered directory:
@@ -71,14 +72,17 @@ git remote add upstream https://github.com/IOSD/IOSD-BPIT-Hacktoberfest-2022.git
 ```bash
 git add .
 ```
+
 ### Step 6 : Commiting your Changes
 * Finally, commit your changes using `git commit` command:
+
 ```bash
 git commit -m "<your-name> message"
 ```
 
 ### Step 7 : Pushing your Changes to Remote Repository
 * You've made it! Just a few more steps to go :) Use the command below to push your changes to the source of the repository.
+
 ```bash
 git push origin <your-branch-name>
 ```
@@ -86,20 +90,13 @@ git push origin <your-branch-name>
 * After you are done with the changes as well as have pushed your code, it's time to make the Pull Request
 * When you visit the Source Repository, you will see `Compare and Pull Request` button. Click the button as well as add a suitable title to your Pull Request along with a brief description, describing your changes in the code!
 
-
-### Now you are good to go with Hacktoberfest
-## 🔗 Links
-[![website](https://img.shields.io/badge/website-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/gdsc-bpit-06b8611b5/)
-[![youtube](https://img.shields.io/badge/Youtube-1DA1F2?style=for-the-badge&logo=youtube&logoColor=red)](https://www.youtube.com/channel/UCOJpfoIiSneLOpH2KCuWDdA/)
-
-
 ```git
   git clone https://github.com/<your-username>/IOSD-BPIT-Hacktoberfest-2022.git
 
 ```
 
 ### Step 3 : Add Upstream 
+
 ```git
 git remote add upstream https://github.com/IOSD/IOSD-BPIT-Hacktoberfest-2022.git
 ```
@@ -122,17 +119,21 @@ git remote add upstream https://github.com/IOSD/IOSD-BPIT-Hacktoberfest-2022.git
 ```bash
 git add .
 ```
+
 ### Step 6 : Commiting your Changes
 * Finally, commit your changes using `git commit` command:
+
 ```bash
 git commit -m "<your-name> message"
 ```
 
 ### Step 7 : Pushing your Changes to Remote Repository
 * You've made it! Just a few more steps to go :) Use the command below to push your changes to the source of the repository.
+
 ```bash
 git push origin <your-branch-name>
 ```
+
 ### Step 8 : Creating a Pull Request
 * After you are done with the changes as well as have pushed your code, it's time to make the Pull Request
 * When you visit the Source Repository, you will see `Compare and Pull Request` button. Click the button as well as add a suitable title to your Pull Request along with a brief description, describing your changes in the code!
@@ -140,6 +141,6 @@ git push origin <your-branch-name>
 
 ### Now you are good to go with Hacktoberfest
 ## 🔗 Links
-[![IOSD](https://img.shields.io/static/v1?label=IOSD&message=IOSDBPIT&color=blue)](https://iosd.tech/)
+[![IOSD](https://img.shields.io/static/v1?label=IOSD&message=IOSD Official Website&color=blue)](https://iosd.tech/)
 [![LinkedIn](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/iosdorg/mycompany/)
 
