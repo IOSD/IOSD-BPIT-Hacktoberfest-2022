@@ -95,51 +95,7 @@ git push origin <your-branch-name>
 
 ```
 
-### Step 3 : Add Upstream 
-
-```git
-git remote add upstream https://github.com/IOSD/IOSD-BPIT-Hacktoberfest-2022.git
-```
-
-### Step 4 : Creating Branch
-
-```bash
-  cd IOSD-BPIT-Hacktoberfest-2022
-  git checkout -b <your-name>
-
-```
-
-### Step 5 : Adding your Changes
-* Open the project in your Code Editor
-
-* Work upon the code and do the desired changes. Use the command `git status` to see the changes made. You can also access to the working tree of the files in the project.
-
-* Use the `git add` command to Stage all your changes towards the final push:
-
-```bash
-git add .
-```
-
-### Step 6 : Commiting your Changes
-* Finally, commit your changes using `git commit` command:
-
-```bash
-git commit -m "<your-name> message"
-```
-
-### Step 7 : Pushing your Changes to Remote Repository
-* You've made it! Just a few more steps to go :) Use the command below to push your changes to the source of the repository.
-
-```bash
-git push origin <your-branch-name>
-```
-
-### Step 8 : Creating a Pull Request
-* After you are done with the changes as well as have pushed your code, it's time to make the Pull Request
-* When you visit the Source Repository, you will see `Compare and Pull Request` button. Click the button as well as add a suitable title to your Pull Request along with a brief description, describing your changes in the code!
-
-
-### Now you are good to go with Hacktoberfest
+### Fasten your seat belts and start hacking!
 ## 🔗 Links
 [![IOSD](https://img.shields.io/static/v1?label=IOSD&message=IOSD Official Website&color=blue)](https://iosd.tech/)
 [![LinkedIn](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/iosdorg/mycompany/)
