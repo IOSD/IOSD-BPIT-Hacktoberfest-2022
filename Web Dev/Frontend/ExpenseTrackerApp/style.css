@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+    font-size:  40;
+}
+p value{
+    background-color: antiquewhite;
+    width: 50;
+    margin-right: 50;
+    font-size: 30;
+}
+
+h4{
+    font-size: 40;
+}
+
+.input{
+  font-size: 125%; 
+  padding: 10px;
+  margin-bottom: 10px;
+  
+
+  
+}
+.butn1{
+    
+    padding: 20px;
+    width: 120px;
+  background-color: green;
+  color: aliceblue;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-right: 50px;
+
+}
+.butn2{
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgb(209, 61, 8);
+    color: aliceblue;
+  margin-top: 30px;
+
+}
+.content{
+    padding-top: 50px; 
+    margin-left:600px;
+}
+
