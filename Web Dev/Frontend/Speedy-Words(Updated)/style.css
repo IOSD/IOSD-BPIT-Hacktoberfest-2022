@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background-color: #DFF6EE;
+    font-family: 'Inconsolata', monospace;
+}
+
+.banner {
+    background-color: #0C737D;
+    padding: 30px;
+    font-size: 50px;
+    color: #FF8C40;
+}
+
+.gameBlock {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    margin-top: 100px;
+    border: 2px solid #FF8C40;
+    border-radius: 3%;
+}
+
+.stats {
+    font-size: larger;
+    margin: 10px;
+}
+
+.scorePanel {
+    float: right;
+}
+
+.timePanel {
+    float: left;
+}
+
+.panel {
+    margin: 25px;
+    padding: 50px;
+}
+
+#word {
+    font-size: 50px;
+}
+
+#guess {
+    margin-top: 70px;
+    width: 300px;
+    height: 30px;
+    font-size: xx-large;
+}
+
+.hidden {
+    display: none;
+}
+
+.finalPanel h1 {
+    margin-top: 100px;
+}
+
+.finalPanel p {
+    font-size: x-large;
+}
+
+.finalPanel button {
+    margin-top: 30px;
+    height: 30px;
+    width: 85px;
+    border-radius: 2%;
+    background-color: #0C737D;
+    color: #FF8C40;
+    font-weight: bolder;
+}

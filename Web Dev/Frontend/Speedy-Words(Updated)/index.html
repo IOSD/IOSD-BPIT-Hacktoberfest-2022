@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Speedy Words</title>
+  </head>
+  <body>
+    <h1 class="banner">Speedy Words</h1>
+
+    <div class="gameBlock initialPanel">
+      <!-- When the game is running -->
+      <p class="scorePanel stats">
+        Score:
+        <span id="score">0</span>
+      </p>
+
+      <p class="timePanel stats">
+        Time Left:
+        <span id="time">10</span>
+      </p>
+
+      <div class = "panel">
+        <h3>Enter this word below:</h3>
+        <h1 id="word">Hello World</h1>
+        <input type="text" name="guess" id="guess" />
+      </div>
+    </div>
+
+    <div class = "gameBlock finalPanel hidden">
+      <h1>Game Over 🥲</h1>
+      <p>
+        Score: 
+        <span id="finalScore">0</span>
+      </p>
+      <button id="refresh" onclick="refreshPage()">Play Again</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
