@@ -1,4 +1,4 @@
-num = input("Number: ")
+num = int(input("Number: "))
 # If given number is greater than 1
 if num > 1:
     # Iterate from 2 to n / 2
