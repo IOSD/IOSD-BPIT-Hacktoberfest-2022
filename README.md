@@ -22,7 +22,7 @@ https://hacktoberfest.com/about/
 International Organization of Student Developers, Bhagwan Parshuram Institute of Technology (IOSD BPIT) is one of the most prestigious societies in the college. With the parent branch in DTU, Chapters of IOSD are spread accross 23 colleges round India. IOSD aims to bring about a change in the technical cultures of the college, contributing by bringing about a change by improving the coding culture and putting an effort to develop together as everyone grows. We at IOSD conduct various sessions, events, coding challenges, learning programs and open-source programs (Like this!). IOSD BPIT continues to enhance and expand it's outcomes by contributing more and more to the society while developing together and hit new milestones during the journey
 
 ## Hacktoberfest Rules
-* During the Hacktoberfest, use the repositories with the tags of `hacktoberfest`, `hacktoberfest2022`, `hacktoberopensource` and tags like such
+* During the Hacktoberfest, use the repositories with the tags of `hacktoberfest`, `hacktoberfest2022`, `hacktoberfest-accepted` and tags like such
 * Please maintain the decorum of the Open Source Community. Be considerate towards the contribution of the other collaborators and contributors. In case of any issue, please mention the same with a valid description regarding the issue.
 * Any violation to Open-Source Community. Any misbehave during the event (including Spamming, Inappropriate Contributions and various others) would lead you to disqualification from the event.
 
