@@ -1,0 +1,31 @@
+body {
+    background: #1f2129;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(./fonts/digital-7.ttf);
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #151618;
+    position: absolute;
+    top: 50px;
+    left: 1000px;
+    transform: translate(-50%) translate(-50%);
+    color: #17d4fe;
+    font-size: 60px;
+    font-family: myFont;
+    letter-spacing: 7px;
+    padding: 2rem 4rem;
+    border-radius: 20px;
+    width: 400px;
+    height: 100px;
+    border-radius: 38px;
+    background: #30323b;
+    box-shadow: inset 5px 5px 21px #131418,
+        inset -5px -5px 21px #4d505e;
+}
