@@ -74,6 +74,11 @@ body {
     color: #5b6b8b;
     float: right;
 }
+.singup {
+    font-size: 12px;
+    color: #5b6b8b;
+    float: right;
+}
 
 .btn__submit {
     position: relative;
