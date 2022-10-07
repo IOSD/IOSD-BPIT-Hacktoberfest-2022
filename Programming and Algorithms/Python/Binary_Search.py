@@ -24,9 +24,20 @@ def binary_search(arr, x):
     # If we reach here, then the element was not present
     return -1
     
-# Test array
-arr = [ 2, 3, 4, 10, 40 ]
-x = 10
+#Creating a list based on the input 
+# creating an empty list
+arr = []
+
+# number of elements as input
+n = int(input("Enter number of elements : "))
+
+# iterating till the range
+for i in range(0, n):
+	ele = int(input())
+
+	arr.append(ele) # adding the element
+
+x = int(input("Enter the element to be searched : "))
  
 # Function call
 result = binary_search(arr, x)
