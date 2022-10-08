@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+    *
+    {
+        padding: 0;
+        margin: 0;
+        box-sizing:border-box;
+    }
+    body
+    {
+        font-family: 'Poppins','sans-serif';
+        overflow-x: hidden;
+        background: linear-gradient(#39519f,#3939e7);
+        z-index:-999;
+    }
+    img
+    {
+        width: 100%;
+    }
+    ul
+    {
+        list-style: none;
+    }
+    a
+    {
+        text-decoration: none;
+    }
+    .container
+    {
+        max-width: 80rem;
+        padding: 0 2rem;
+        margin: 0 auto;
+    }
+    nav
+    {
+        width: 100%;
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: 50;
+    }
+    nav .container
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 6rem;
+    }
+    .logo
+    {
+        max-width: 250px;
+        display: flex;
+        align-items: center;
+    }
+    .links ul
+    {
+        display: flex;
+
+    }
+    .links a
+    {
+        display: inline-block;
+        padding: 0.7rem 1.2rem;
+        margin-right: 0.6rem;
+        color: #ffff;
+        font-size: 1.05rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 1;
+        transition: 0.3s;
+        border-radius: 1.5rem;
+    }
+    .links a.active,
+    .links a:hover
+    {
+        color: #0b0235;
+        background: #ffff;
+    }
+    .hamburger-menue
+    {
+        width: 2.7rem;
+        height: 3rem;
+        z-index: 100;
+        position: relative;
+        display: none;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .hamburger-menue .bar
+    {
+        position: relative;
+        width: 2.1rem;
+        height: 3px;
+        border-radius: 3px;
+        background: #ffff;
+    }
+    .bar::before,
+    .bar::after
+    {
+        content: "";
+        position: absolute;
+        width: 2.1rem;
+        height: 3px;
+        border-radius: 3px;
+        background:#ffff;
+    }
+    .bar::before
+    {
+        transform: translateY(-9px);
+    }
+    .bar::after
+    {
+        transform: translateY(9px);
+    }
+    .hero
+    {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .hero img
+    {
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none;
+    }
+    .hero #base
+    {
+        z-index: 6;
+    }
+    .hero #text
+    {
+        position: absolute;
+        color: #fefefe;
+        font-size: clamp(3rem,7.5vw,8rem);
+        white-space: nowrap;
+        letter-spacing: 3px;
+        z-index: 5;
+        right: -850px;
+    }
+    #btn
+    {
+        font-size: 18px;
+        position: absolute;
+        color: #fefefe;
+        text-decoration: none;
+        padding: 8px 30px;
+        display: inline-block;
+        border: 2px solid #fefefe;
+        border-radius: 25px;
+        background: transparent;
+        z-index: 7;
+        letter-spacing: 0.51px;
+        transform: translateY(200px);
+    }
+    .section-padding
+    {
+        padding: 80px 0;
+        background: #fefefe;
+    }
+
+</style>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>    
+            <div class="links">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="hamburger-menue">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <img src="1.png" class="translateX" data-speed="0.25" id="moon" alt="">
+        <img src="2.png" class="translateY" data-speed="0.35" id="clouds" alt="">
+        <img src="3.png" class="translateY" data-speed="0.15"id="mountains" alt="">
+        <h1 id="text" class="translateX" data-speed="-3">Discover New Horizons</h1>
+        <a href="#" id="btn">Explore</a>
+        <img src="4.png" class="translateY"data-speed="0" id="base" alt="">
+    </section>
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="left-content">
+                <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus reiciendis iste impedit pariatur fuga numquam ea tempore, labore facilis totam sint voluptatem odio sunt saepe facere incidunt mollitia alias iusto nemo eius corporis dignissimos. Quae enim vero, asperiores dolore at ut deserunt nemo neque aut praesentium odio? Alias omnis amet praesentium. Impedit, ducimus? Veritatis eligendi doloremque rerum placeat unde consectetur rem inventore aspernatur ad impedit odio sunt, dolorum facilis nemo, laboriosam recusandae deserunt molestias porro! Vel ipsum excepturi velit est perspiciatis! Maiores sit quaerat sunt minima dolores, sapiente eaque saepe aperiam, autem doloremque omnis iusto, harum fugit. Provident, aperiam accusantium.</h1>
+                <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae ut ratione atque, ad vel mollitia aliquid ex, sint nostrum nemo harum voluptatem libero ipsum hic sequi eveniet optio enim reprehenderit!</h4>
+            </div>
+    
+        </div>
+    </section>
+
+    <script>
+        const translateX=document.querySelectorAll(".translateX")
+        const translateY=document.querySelectorAll(".translateY")
+        window.addEventListener("scroll",() =>{
+            let scroll=window.pageYOffset;
+            translateX.forEach(element =>{
+                let speed=element.dataset.speed;
+                element.style.transform=`translateX(${scroll*speed}px)`;
+            })
+            translateY.forEach(element =>{
+                let speed=element.dataset.speed;
+                element.style.transform=`translateY(${scroll*speed}px)`;
+            })
+        })
+
+    </script>
+</body>
+</html>
