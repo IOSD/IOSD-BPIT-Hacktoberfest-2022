@@ -25,9 +25,13 @@
  }  
 void main ()    
 {    
-    int i, j,temp;     
-    int a[5] = { 10, 35, 32, 13, 26};     
-    int n = sizeof(a)/sizeof(a[0]);   
+    int i, j,temp;
+    int n;
+    cin<<"Enter the size of array";
+    int a[n];     
+    for(i = 0; i < n ; i++){
+     cin>>a[i];
+    }
     printf("Before sorting array elements are - \n");  
     print(a, n);  
     bubble(a, n);  
