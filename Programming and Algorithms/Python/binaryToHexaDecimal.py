@@ -47,4 +47,4 @@ for i in range(0, len(binNum), 4):
     if bit == "1111":
         result += "F"
 
-print(f"The hexadecimal number for 0b{binNum.lstrip("0")} is 0x{result.lstrip("0")}")
+print(f'The hexadecimal number for 0b{binNum.lstrip("0")} is 0x{result.lstrip("0")}')
