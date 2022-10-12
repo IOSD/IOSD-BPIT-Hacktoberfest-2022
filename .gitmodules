@@ -1,0 +1,12 @@
+[submodule "Blockchain/EPIC_NFT_MINTER/NFT-MINTER-CLIENT"]
+	path = Blockchain/EPIC_NFT_MINTER/NFT-MINTER-CLIENT
+	url = https://github.com/rohit-raje-786/NFT-MINTER-SMART-CONTRACT.git
+[submodule "Blockchain/NFT-MINTER-SMART-CONTRACT"]
+	path = Blockchain/NFT-MINTER-SMART-CONTRACT
+	url = https://github.com/rohit-raje-786/NFT-MINTER-SMART-CONTRACT.git
+[submodule "NFT-MINTER-SMART-CONTRACT"]
+	path = NFT-MINTER-SMART-CONTRACT
+	url = https://github.com/rohit-raje-786/NFT-MINTER-SMART-CONTRACT.git
+[submodule "NFT-MINTER-CLIENT"]
+	path = NFT-MINTER-CLIENT
+	url = https://github.com/rohit-raje-786/NFT-MINTER.git
