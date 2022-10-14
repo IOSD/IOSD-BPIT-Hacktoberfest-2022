@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+.heading {
+    background-color: rgb(202, 118, 146);
+    color: white;
+    padding: 10px;
+    border: 1px solid lightgray;
+    margin: 5px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+}
+
+.container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+.courses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home {
+    background-color: rgb(207, 205, 205);
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 30px;
+    color: black;
+}
+.home:hover {
+    background-color: rgb(177, 177, 177);
+}

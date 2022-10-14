@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Payment Form</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="style/payment_form_style.css">
+    
+    <!--Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <h1 class="main_heading">Payment Form</h1>
+        <hr>
+        <p>Required Fields are followed by *</p>
+        <h2>User Information</h2>
+        <p>Name: *<input type="text" name="name" required placeholder="Arunima" id="username"></p>
+        <fieldset>
+            <legend>Gender: *</legend>
+            <div id="gender">
+                Male <input type="radio" name="gender" id="male" required value="male">
+                Female <input type="radio" name="gender" id="female" required value="female">
+            </div>
+        </fieldset>
+        <p>Address: *<textarea name="address" id="address" cols="100" rows="8" placeholder="Enter your address here"></textarea></p>
+        <p>Email: *<input type="email" name="email" id="email" required placeholder="xyz@gmail.com"></p>
+        <p>Pincode: *<input type="number" name="pincode" id="pincode" required placeholder="123456"></p>
+        <h2>Payment Information</h2>
+        <p>Card Type: *
+            <select name="card_type" id="card_type" required>
+                <option value="">--Select a card type--</option>
+                <option value="visa"> Visa </option>
+                <option value="rupay"> Rupay </option>
+                <option value="mastercard"> Mastercard </option>
+                <option value="credit_card"> Credit Card </option>
+            </select>
+        </p>
+        <p>Card Number: *<input type="number" name="card_number" id="card_number" required placeholder="1111-2222-3333-4444"></p>
+        <p>Expiration Date: *<input type="date" name="exp_date" id="exp_date" required></p>
+        <p>CVV: *<input type="password" name="cvv" id="cvv" required placeholder="123"></p>
+        <input type="submit" value="Pay Now">
+        <br>
+        <br>
+        <br>
+        <a href="index.html" class="home"> <i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Home</a>
+        <br>
+        <br>
+    </form>
+    </div>
+    <script src="javascript/payment_form.js"></script>
+</body>
+</html>

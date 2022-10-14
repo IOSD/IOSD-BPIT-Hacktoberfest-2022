@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+#heading {
+    background-color: rgb(156, 161, 240);
+    color: white;
+    padding: 10px;
+    border: 1px solid lightgray;
+    margin: 5px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+}
+
+#main-content{
+    padding: 20px;
+    margin: 5px;
+}
+
+#fluid-wrap {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+.home {
+    background-color: rgb(207, 205, 205);
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 30px;
+    color: black;
+}
+.home:hover {
+    background-color: rgb(177, 177, 177);
+}
+
+@media all and (min-width: 1001px){
+    #sidebar ul li a:after {
+        content: " (" attr(data-email) ")";
+        font-size: 11px;
+        font-style: italic;
+        color: rgb(74, 143, 148);
+    }
+}
+
+
+@media all and (max-width :1000px) and (min-width: 701px) {
+    #sidebar ul li a:before {
+        content: "Email: ";
+        font-size: 11px;
+        font-style: italic;
+        color: rgb(74, 143, 148);
+    }
+}
+
+
+@media all and (max-width :700px) and (min-width: 520px) , (min-width: 1151px){
+    #sidebar ul li a {
+        padding-left: 20px;
+        background: url(/images/email.png) left center no-repeat;
+        background-size: 11px 11px;
+    }
+}
