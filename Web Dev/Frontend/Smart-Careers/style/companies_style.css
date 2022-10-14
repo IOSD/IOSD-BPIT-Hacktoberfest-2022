@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    background-color: #042449;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+
+section div {
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+
+section a {
+    width: 15%;
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(232, 230, 230);
+    margin-bottom: 25px;
+}
+
+section a:hover {
+    background-color: rgb(179, 179, 179);
+}
+
+section a img {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    section a {
+        width: 100%;
+    }
+    img {
+        height: 40%;
+        width: 90%;
+    }
+}
+
+.home {
+    background-color: rgb(207, 205, 205);
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 30px;
+    color: black;
+}
+.home:hover {
+    background-color: rgb(177, 177, 177);
+}
+
+
+#google {
+    color: #4285F4;
+}
+#meta {
+    color: #0668E1;
+}
+#microsoft {
+    color: #00a1f1;
+}
+#amazon {
+    color: #FF9900;
+}
+#netflix {
+    color: #E50914;
+}
+#apple {
+    color: #000000;
+}
+#linkedin {
+    color: #0077b5;
+}
+#ibm {
+    color: #000000;
+}
+#hackerrank {
+    color: rgb(21, 144, 70);
+}
+#dell {
+    color: #007DB8;
+}
+#hp {
+    color: #0096D6;
+}
+#intel {
+    color: #0071c5;
+}
+#intuit {
+    color: #365ebf ;
+}
+#goldman_sachs {
+    color: #7D9CC0;
+}
+#morgan_stanley {
+    color: #000000;
+}
+#mathworks {
+    color: #0072BD;
+}
+#cisco {
+    color: #049fd9;
+}
+#oracle {
+    color: #f80000
+}
+#adobe {
+    color: #f40f02;
+}
+#deloitte {
+    color: #000000;
+}
+#uber {
+    color: #000000;
+}
+#paytm {
+    color: #00baf2;
+}
+#flipkart {
+    color: #F8E831;
+}
+#twitter {
+    color: #00acee;
+}
+#paypal {
+    color: #3b7bbf ;
+}
+#tcs {
+    color: #006690;
+}
+#swiggy {
+    color: #FF6600;
+}
+#zomato {
+    color: #cb202d;
+}
+#meesho{
+    color: #F43397;
+}
