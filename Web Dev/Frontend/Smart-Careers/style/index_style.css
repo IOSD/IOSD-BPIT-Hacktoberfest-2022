@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+#SmartCareers {
+    width: 30%;
+}
+
+header {
+    background-color: #042449;
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+nav {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    background-color: #042449;
+    color: white;
+    border: 1px solid lightgray;
+    margin: 5px;
+    text-align: center;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+nav a:hover {
+    background-color: black;
+}
+
+
+/*Todo list starts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.todolist {
+    width: 50%;
+    border: 2px solid white;
+    padding: 8px;
+}
+.todolist li {
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+    word-break: break-word;
+}
+li button {
+    float: right;
+    margin-left: 5px;
+    border: 0px solid transparent;
+    border: 1px solid white;
+    transition: 0.2s all ease-in-out;
+}
+li button:hover {
+    background-color: #042449;
+    color: white;
+}
+#inputtask {
+    padding: 8px;
+    border: 0px solid transparent;
+    margin-right: 10px;
+    color: black;
+}
+#inputtask:focus {
+    outline: none;
+}
+#addbutton,
+  .clear {
+    color: #042449;
+    border: 0px solid transparent;
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.3s all ease-in-out;
+}
+#addbutton:hover,
+  .clear:hover {
+    background-color: #042449;
+    color: white;
+    transform: scale(0.97);
+}
+.d-none {
+    display: none;
+}
+li span:focus {
+    background-color: white;
+    color: black;
+    outline: none;
+    padding: 0 5px;
+    display: inline-block;
+    min-width: 300px;
+    max-width: 400px;
+}
+.link {
+    text-align: center;
+    margin: 20px;
+}
+.link a {
+    color: white;
+}
+/*Todo list ends*/
+  
+
+
+
+section div {
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+section h1, section p {
+    color: #042449;
+}
+
+section a {
+    width: 15%;
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(232, 230, 230);
+    margin-bottom: 25px;
+}
+
+section a:hover {
+    background-color: rgb(179, 179, 179);
+    width: 18%;
+    transition: 1s;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    #SmartCareers {
+        height: 40%;
+        width: 90%;
+    }
+
+    section a {
+        width: 100%;
+    }
+    section a:hover {
+        width: 75%;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+    nav a {
+        padding: 5px;
+    }
+    
+}
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!--Website icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style/login_style.css">
+
+</head>
+
+
+<body>
+    
+    <div class="container">
+    <form action="">
+        <div class="heading">
+            <h1>
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg">
+                <br>
+                LOGIN
+            </h1>
+        </div>
+        <hr>
+        <div class="main_body">
+            <p>Username: * <br><input type="text" name="username" required placeholder="Your username" id="username"></p>
+            <p>Email: * <br><input type="email" name="email" required placeholder="Valid Email Address" id="email"></p>
+            <p>Password: * <br><input type="password" name="password" required placeholder="Your password" id="password"></p>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <br>
+            <br>
+            <input type="submit" value="Login">
+            <br>
+            <br>
+            <span>
+                Forgot <a href="#">password?</a>
+                <br>
+                <br>
+                Don't have an account yet? <a href="signup.html">SignUp</a>
+                <br>
+                <br>
+                <br>
+                <a href="index.html" class="home"> <i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Home</a>
+                <br>
+            </span>
+        </div>
+    </form>
+    </div>
+    <script src="javascript/login_script.js"></script>
+</body>
+</html>
