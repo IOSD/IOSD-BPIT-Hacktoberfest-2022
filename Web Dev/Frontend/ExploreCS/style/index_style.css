@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+header, nav {
+    background-color: rgb(153, 91, 168);
+    color: white;
+    border: 1px solid lightgray;
+    margin: 5px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.menu_button:hover {
+    background-color: black;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+}
+
+.container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+.myself {
+    clip-path: ellipse(30% 40% at 50% 50%);
+    float: left;
+}
+
+.cleared {
+    clear: left;
+}
+
+nav {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+}
+
+#computer_science {
+    width: 30%;
+    border-radius: 4px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.sub_heading {
+    background: rgb(28,25,81);
+    background: linear-gradient(90deg, rgba(28,25,81,1) 0%, rgba(103,42,141,1) 50%, rgba(0,117,255,1) 100%);
+    padding: 10px 55px;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+}
+
+.carousel-cell {
+    width: 60%;
+    height: 200px;
+    margin-right: 10px;
+    background: rgb(122, 73, 212);
+    border-radius: 5px;
+}
+
+.carousel-cell {
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.social_media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.social_media a {
+    background-color: rgb(207, 205, 205);
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.25em;
+}
+
+.social_media a:hover {
+    background-color: rgb(177, 177, 177);
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+footer div a {
+    background-color: rgb(207, 205, 205);
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 30px;
+    color: black;
+}
+
+footer div a:hover {
+    background-color: rgb(177, 177, 177);
+}
+
+.github_handle {
+    color: #211F1F;
+}
+.hackerrank_handle {
+    color: #102a4e;
+}
+.linkedin_handle {
+    color: #0e76a8;
+}
+.google_developers_handle {
+    color: #4885ed;
+}
+.coursera_handle {
+    color: 0056d2;
+}
+
+#responsible_ai {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+    nav a {
+        padding: 5px;
+    }
+    .carousel-cell {
+        width: 80%;
+        height: 450px;
+    }
+    .social_media {
+        flex-direction: column;
+    }
+    footer div {
+        flex-direction: column;
+    }
+    #responsible_ai {
+        width: 100%;
+    }
+}
+
