@@ -1,116 +1,81 @@
-.clock-dial{
-    width: 500px;
-    height: 500px;
-    border: 20px solid rebeccapurple;
-    border-radius: 50%;
-    margin: 0 auto;
-    position: relative;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     
-    background-color: rgb(0, 0, 0)
-}
-.point{
-    width: 30px;
-    height: 30px;
-    background-color:rebeccapurple;
-    border-radius: 50%;
-    position : absolute;
-    top:240px;
-    left:240px;
-
+    
 
 }
-.hour{
-    font-size: 35px;
+.container{
+    background-color: #F8D8F9;
+    min-height: 100vh;
+    width: 160vh;
+    border:20px solid black ;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.content{
+    max-width: 900px;
+    margin: 0;
+
+}
+.image, img{ 
+    width: 300px;
+    height: 320px;
+border-radius: 20%;
+margin left: 150px;
+}
+.top_section{
+    margin: 100px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.top_section h1{
+    font-size: 40px;
     font-weight: bold;
-    color:hotpink;
-    position: absolute;
-
-
-}.hour-1{
-    top: 40px;
-    right: 130px;
+    color: black;  
 
 }
-.hour-2{
-    top: 125px;
-    right: 45px;
 
-}.hour-3{
-    top: 229px;
-    right: 10px;
-    font-size: 60px;
+.top_section h4{
+    text-align: center;
+    font-size: 20px;
 
-}.hour-4{
-    top: 345px;
-    right: 45px;
-
-}.hour-5{
-    top: 430px;
-    right: 130px;
-
-}.hour-6{
-    bottom: 10px;
-    left: 240px;
-    font-size: 60px;
-
-}.hour-7{
-    top: 430px;
-    left: 130px;
-
-}.hour-8{
-    top: 345px;
-    left: 45px;
-
-}.hour-9{
-    top: 229px;
-    left: 10px;
-    font-size: 60px;
-
-}.hour-10{
-    top: 125px;
-    left:  45px;
-
-}.hour-11{
-    top: 40px;
-    left: 130px;
-
-}.hour-12{
-    top: 10px;
-    left: 229px;
-    font-size: 60px;
-
-}#clockcontainer{
-    
 }
-#hour,#minute,#second{
-position: absolute;
-background:rebeccapurple;
-border-radius: 10px;
-transform-origin: bottom;
+.about{
+    margin-left: 80px;
 
-
-}#hour{
-   width: 1.9%;
-   height:28% ; 
-   top: 22.5%;
-   left: 48.58%;
-   
-   
-
-}#minute{
-    width: 1.4%;
-    height: 36%;
-    top: 14%;
-    left: 50%;
-    
-    
-}#second{
-    width: 0.7%;
-    height: 41%;
-    top: 10%;
-    left: 50%;
-    
+}.about h2{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
+.about p{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
 
+}.biography{
+    margin-left: 80px;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    margin-top: 30px;
+    
+}.biography ul{
+    margin-left: 50px;
+    font-size: 20px;
+    margin-bottom: 30px;
 
+}.biography h2{
+    margin-bottom: 20px;
+}
+footer{
+    text-align: end;
+    margin-right: 0;
 }
