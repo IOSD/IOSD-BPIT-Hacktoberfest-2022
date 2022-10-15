@@ -1,34 +1,167 @@
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analog Clock</title>
+     <title>Simple Calculator</title> 
     <link rel="stylesheet" href="style.css">
-    </head>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   </head>
+</head>
 <body>
-   <div class="clock-dial">
-    <div class="point"></div>
-    <div class="hour hour-1">1</div>
-    <div class="hour hour-2">2</div>
-    <div class="hour hour-3">3</div>
-    <div class="hour hour-4">4</div>
-    <div class="hour hour-5">5</div>
-    <div class="hour hour-6">6</div>
-    <div class="hour hour-7">7</div>
-    <div class="hour hour-8">8</div>
-    <div class="hour hour-9">9</div>
-    <div class="hour hour-10">10</div>
-    <div class="hour hour-11">11</div>
-    <div class="hour hour-12">12</div>
-    <div id="clockcontainer">
-         <div id="hour"></div>
-         <div id="minute"></div>
-         <div id="second"></div>
+    <div class="center">
+        <form  name="forms">
+            <input type="text" id="display" name="display" disabled>
+            <div class="buttons">
+                <input type="button"id="seven" value="7" >
+                <input type="button"id="eight" value="8" >
+                <input type="button"id="nine" value="9" >
+                <input type="button"id="divide" value="/" ><br>
+                <input type="button"id="four" value="4" >
+                <input type="button"id="five" value="5" >
+                <input type="button" id="six"value="6" >
+                <input type="button"id="multi" value="*" ><br>
+                <input type="button" id="one" value="1" >
+                <input type="button"id="two" value="2" >
+                <input type="button"id="three" value="3" >
+                <input type="button" id="subs"value="-" ><br>
+                <input type="button" id="dot"value="." >
+                <input type="button"id="zero" value="0" >
+                <input type="button"id="add" value="+" >
+                <input type="button"id="clear" value="C" ><br>
+                <input type="button"id="equal" value="=" >
+
+            </div>
+        </form>
     </div>
-   </div> 
+    <link rel="stylesheet" href="script.js">
+</body>
+</html> -->
 
 
-  <script src="logic.js"></script>  
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title> JavaScript Calculator </title>
+
+<style>
+h1 {
+	text-align: center;
+	padding: 23px;
+	background-color: limegreen;
+	color: white;
+	}
+
+#clear{
+width: 335px;
+border: 3px solid limegreen;
+
+	border-radius: 5px;
+    color: white;
+	padding: 20px;
+	background-color: red;
+    margin-top: 20px;
+}
+
+.formstyle
+{
+width: 350px;
+height: 590px;
+margin: auto;
+border: 3px solid limegreen;
+background: black;
+border-radius: 5px;
+padding: 20px;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+
+}
+
+
+
+input
+{
+width: 70px;
+height: 60px;
+
+
+background-color: rgb(227, 221, 221);
+color: white;
+border: 2px solid limegreen;
+	border-radius: 5px;
+	padding: 28px;
+    line-height: 5px;
+	margin: 7px;
+	font-size: 23px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    flex:auto;
+
+}input:hover{
+    transition: 0.5s;
+    background: rgb(139, 242, 139);
+
+}
+
+
+#calc{
+width: 303px;
+height: 90px;
+font-size: 35px;
+border: 3px solid limegreen;
+	border-radius: 3px;
+	padding: 20px;
+	margin: auto;
+    background: rgb(209, 206, 206);
+}
+
+</style>
+
+</head>
+<body>
+<h1> A Simple Calculator </h1>
+<div class= "formstyle">
+<form name = "form1">
+	
+	<!-- This input box shows the button pressed by the user in calculator. -->
+  <input id = "calc" type ="text" name = "answer"> <br> <br>
+  <!-- Display the calculator button on the screen. -->
+  <!-- onclick() function display the number prsses by the user. -->
+  <input type = "button" value = "1" onclick = "form1.answer.value += '1' ">
+  <input type = "button" value = "2" onclick = "form1.answer.value += '2' ">
+  <input type = "button" value = "3" onclick = "form1.answer.value += '3' ">
+   <input type = "button" value = "+" onclick = "form1.answer.value += '+' ">
+  <br> <br>
+  
+  <input type = "button" value = "4" onclick = "form1.answer.value += '4' ">
+  <input type = "button" value = "5" onclick = "form1.answer.value += '5' ">
+  <input type = "button" value = "6" onclick = "form1.answer.value += '6' ">
+  <input type = "button" value = "-" onclick = "form1.answer.value += '-' ">
+  <br> <br>
+  
+  <input type = "button" value = "7" onclick = "form1.answer.value += '7' ">
+  <input type = "button" value = "8" onclick = "form1.answer.value += '8' ">
+  <input type = "button" value = "9" onclick = "form1.answer.value += '9' ">
+  <input type = "button" value = "*" onclick = "form1.answer.value += '*' ">
+  <br> <br>
+  
+  
+  <input type = "button" value = "/" onclick = "form1.answer.value += '/' ">
+  <input type = "button" value = "0" onclick = "form1.answer.value += '0' ">
+    <input type = "button" value = "." onclick = "form1.answer.value += '.' ">
+	<!-- When we click on the '=' button, the onclick() shows the sum results on the calculator screen. -->
+  <input type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) ">
+  <br> 
+  <!-- Display the Cancel button and erase all data entered by the user. -->
+  <input type = "button" value = "Clear All" onclick = "form1.answer.value = ' ' " id= "clear" >
+  <br> 
+  
+</form>
+</div>
 </body>
 </html>
+
