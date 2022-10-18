@@ -1,0 +1,148 @@
+{% load static %}
+
+<html lang="en" class="">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Custom URL Shortener</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'style.css' %}"
+      type="text/css"
+      media="screen"
+    />
+  </head>
+
+  <body class="pace-done is_index_lout">
+    <main id="content" role="main">
+      <section class="container-fluid mx-0 bg_cuttly_main_092021">
+        <div class="header__bg"></div>
+        <div class="mb-0">
+          <div class="container position-relative">
+            <div class="row">
+              <div class="dv_main col-md-6 cutt_main_b2">
+                <h2 class="h1">URL Shortener</h2>
+                <h3 class="h2 h2_index text-left text-white">
+                  All the features you need in one place. <br />
+                  Shorten, manage and track your links the easy way.
+                </h3>
+                <div class="butt_on mx-auto">
+                  <a href="#shorten" class="btn_m_l btn_m_l_1">Shorten</a>
+                  <!-- <a href="/all-analytics" class="btn_m_l btn_m_r" target="_new">Analytics</a> -->
+                </div>
+              </div>
+              <div class="col-md-6 mobile_bg text-right">
+                <img src="{% static 'Rebrandly.png' %}" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg_main" id="shorten" style="padding-bottom: 5%">
+        <div class="container cutt_main_inp">
+          <div class="row">
+            <div class="col-12 mt-4 py-2 mb-2">
+              <form method="post" id="form_input">
+                {% csrf_token %}
+                <div class="input-group">
+                  <input
+                    type="url"
+                    class="cutt_url w-50 p-4 rounded-12"
+                    placeholder="Paste long url and shorten it"
+                    name="longurl"
+                    required
+                  />
+
+                  <input
+                    type="text"
+                    class="cutt_url w-25 p-4 rounded-12"
+                    placeholder="alias"
+                    name="custom_name"
+                    style="margin-left: 5%"
+                  />
+
+                  <button class="btn_cutt rounded-6 shortenit_b" role="button">
+                    Shorten
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-12 mt-4 py-2 mb-2"
+              style="text-align: center; color: red"
+            >
+              {% comment %}
+              <p>The alias name is already taken</p>
+              {% endcomment %}
+            </div>
+          </div>
+        </div>
+        {% if submitted %}
+        <div id="results">
+          <div class="container">
+            <div class="row py-4">
+              <div class="col-12 result">
+                <div class="url_options rounded-6" id="0">
+                  <p class="data_link">{{ data.date }}</p>
+                  <p class="url_link">{{ data.long_url }}</p>
+                  <p id="link" class="link_element">
+                    <a
+                      href="https://localhost:8000/redirect/day3-ppt"
+                      class="short_url_l"
+                      target="_blank"
+                      >{{ data.short_url }}</a
+                    >
+                  </p>
+                  <p class="btn-cutt i_s"></p>
+                  <a
+                    href="https://localhost:8000/analytics/day3-ppt"
+                    class="btn-cutt click_stats"
+                  >
+                    <svg class="i_svg" viewBox="0 0 24 24">
+                      <use xlink:href="#i_chart"></use>
+                    </svg>
+                    <span> <b class="badge">{{ data.clicks }}</b>clicks </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      </section>
+
+      <footer class="footer-area footer--light">
+        <div class="mini-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="copyright-text">
+                  <p>
+                    <a href="https://www.linkedin.com/in/keshav-garg-269484189/"
+                      >Keshav Garg</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
