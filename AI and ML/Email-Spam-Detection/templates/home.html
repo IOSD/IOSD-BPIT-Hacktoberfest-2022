@@ -1,0 +1,59 @@
+{% extends "bootstrap/base.html" %} {% block content %}
+
+<div class="container" style="background-color: rgb(231, 255, 233);">
+  <div class="jumbotron text-center"
+    style="background-color: rgb(200, 255, 214);  margin-top: 20px; font-family: Georgia, 'Times New Roman', Times, serif; border: solid 3px aquamarine;">
+    <h1>Email Spam Detection</h1>
+  </div>
+</div>
+
+<div class="container" style="font-family: monospace; background-color: rgb(231, 255, 233);">
+  <form method="POST" action="/" id="myForm">
+    <div class="heading text-center">
+      <label class="heading" style="font-size: 30px; text-align: center;">Enter Your Email Below:</label>
+    </div>
+    <textarea class="form-control" rows="5" cols="2" name="rawtext"></textarea>
+
+    <div class="button" style="text-align: center; padding: 10px;">
+
+      <input type="submit" value="Submit" class="btn btn-primary"
+        style="padding: 10px; margin-top: 15px; margin-bottom: 15px; margin-right: 15px;" />
+      <input type="button" onclick="myFunction()" value="Clear" class="btn btn-outline-dark"
+        style="padding: 10px; margin-top: 15px; margin-bottom: 15px; margin-right: 15px;" />
+
+      <a href="" type="button" class="btn btn-danger"
+        style="padding: 10px; margin-top: 15px; margin-bottom: 15px;">
+        Reset</a>
+    </div>
+  </form>
+</div>
+
+
+<br />
+<div class="main">
+  <div class="container">
+    <div class="card">
+      <div class="card-text">
+        <h5 class=" text-center" style="font-family: monospace; font-size: 20px; font-weight: bold;">Your Text</h5>
+        <p style="color: #ea0000; font-family: sans-serif">
+          {{ received_text }}
+        </p>
+        <br />
+      </div>
+      <div class="card-footer text-muted">
+        <h1 class="output" style="text-align: center; font-weight: bold;">{{message}}</h1>
+      </div>
+    </div>
+  </div>
+</div>
+  {% endblock %}
+
+  {% block scripts %} {{ super() }}
+
+  <script>
+    function myFunction() {
+      document.getElementById("myForm").reset();
+    }
+  </script>
+
+  {% endblock %}
