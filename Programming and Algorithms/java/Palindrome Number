@@ -48,4 +48,17 @@ public class Palindrome_Number {
 	        return rev == xorig;
 	    }
 	}
+	public class Solution3 {
+		public boolean isPalindrome(int num) {
+			String s = String.valueOf(num);
+			int l = 0, h = s.length() - 1;
+			while (l < h) {
+		    	if (s.charAt(l) != s.charAt(h)) {
+		       		return false;
+		    	}
+		    	l++; h--;
+			}
+			return true;
+    	}
+	}
 }
