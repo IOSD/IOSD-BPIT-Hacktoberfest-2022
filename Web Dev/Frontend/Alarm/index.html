@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ninja Clock</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="imgs/ninja.jpg" sizes="16x16" type="image/png" />
+  </head>
+  <body>
+    <div id="page">
+      <h1>NINJA CLOCK</h1>
+      <h1 id="clock"></h1>
+      <div id="content">
+        <img id="alarming" src="imgs/ninja.jpg" />
+        <div id="yourmsg"></div>
+        <div id="timeEvent"></div>
+      </div>
+      <div id="alarm-form">
+        <p>Set Time <input type="time" id="input_time" value="00:00" /></p>
+        <input type="text" id="input_msg" placeholder="Your Message" />
+        <button id="submit">Set Alarm</button>
+      </div>
+      <footer>Never miss a thing</footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

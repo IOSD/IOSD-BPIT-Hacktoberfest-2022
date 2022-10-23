@@ -1,0 +1,82 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Arial, "Times New Roman";
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+h1,
+p,
+footer {
+  color: rgb(62, 23, 170);
+}
+#page {
+  background-color: rgb(163, 250, 137);
+  border-radius: 100px;
+  padding: 1% 5%;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+p {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+#yourmsg,
+#timeEvent {
+  font-size: 30px;
+  font-family: cursive;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #000;
+  color: yellow;
+}
+
+#yourmsg {
+  margin-top: -200px;
+}
+#timeEvent {
+  margin: 80px 0px 5rem -20px;
+}
+button {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background-color: #ca1919fa;
+  color: rgb(238, 217, 217);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 5%;
+}
+button:hover {
+  background-color: rgb(1, 2, 2);
+  color: rgb(241, 241, 139);
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+#content,
+#alarm-form {
+  display: inline-block;
+}
+#alarm-form > p {
+  text-align: left;
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 650px) {
+  button {
+    width: 100%;
+  }
+}
