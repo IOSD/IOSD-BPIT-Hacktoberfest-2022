@@ -1,0 +1,50 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+// A binary search function.
+ void searchArray(int nums[],int n, int target) {
+        int low = 0;
+        int high = n-1;
+        int ans[] = {-1,-1};
+        while(low <= high){
+            int mid = low + (high - low)/2;
+            if(nums[mid] > target){
+                high = mid - 1;
+            }
+            else if(nums[mid] < target){
+                low = mid + 1;
+            }
+            else{
+            	//first position of target element found
+                ans[0] = mid;
+                high = mid - 1;
+            }
+        }
+        low = 0;
+        high = n - 1;
+        while(low <= high){
+            int mid = low + (high - low)/2;
+            if(nums[mid] > target){
+                high = mid - 1;
+            }
+            else if(nums[mid] < target){
+                low = mid + 1;
+            }
+            else{
+            	//last position of target element found
+                ans[1] = mid;
+                low = mid + 1;
+            }
+        }
+
+        cout<<target<<" is found at position " << ans[0] <<" and "<<ans[1];
+    }
+int main()
+{
+    int nums[] =  { 2, 3, 2, 10, 40 };
+    int x = 2;
+    int n =5;
+    vector<int>v;
+    searchArray(nums,n,x);
+	    return 0;
+}
