@@ -44,7 +44,6 @@ int main()
     int nums[] =  { 2, 3, 2, 10, 40 };
     int x = 2;
     int n =5;
-    vector<int>v;
-    searchArray(nums,n,x);
+   searchArray(nums,n,x);
 	    return 0;
 }
