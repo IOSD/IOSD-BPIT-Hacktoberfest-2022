@@ -14,7 +14,7 @@ int LinearSearch(int arr[], int n, int x)
 int main()
 {
 	int arr[] = { 3, 4, 1, 7, 5,2,8 };
-	int n = sizeof(arr) / sizeof(arr[0]);
+	int n = 7;
 	int x = 4;
 
 	int position = LinearSearch(arr, n, x);
