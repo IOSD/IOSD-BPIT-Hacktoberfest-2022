@@ -1,7 +1,7 @@
 * {box-sizing: border-box;}
 html {font-size: 18px;}
 body {
-    background: #f9f4f0;
+    background: #f9f7fa;
     color: #354;
     font-family: 'Nunito', sans-serif;
 }
@@ -12,7 +12,7 @@ body {
 }
 #logo, button {
     background: linear-gradient(#465, #354 40%, #132 80%, #132);
-    color: #f9f4f0;
+    color: #f6fa7a;
 }
 #logo {
     text-transform: uppercase;
@@ -49,7 +49,7 @@ body {
 }
 .nav-flex li a:link, .nav-flex li a:visited {
     background: #354;
-    color: #f9f4f0;
+    color: #d67afa;
 }
 
 #summary {
@@ -91,18 +91,18 @@ input:focus, textarea:focus {
 }
 
 .hint {
-    font-weight: 300;
+    font-weight: 400;
     color: #666;
-    font-size: 16px;
+    font-size: 18px;
 }
 textarea {
-    height: 100px;
+    height: 110px;
 }
 button {
-    width: 100%;
-    max-width: 430px;
-    padding: 12px 0;
-    font-size: 18px;
+    width: 110%;
+    max-width: 440px;
+    padding: 13px 0;
+    font-size: 20px;
     border: none;
     border-radius: 8px;
     margin: 1.5rem auto 2.5rem;
