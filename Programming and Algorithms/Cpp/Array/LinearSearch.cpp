@@ -17,11 +17,11 @@ int main()
 	int n = 7;
 	int x = 4;
 
-	int position = LinearSearch(arr, n, x);
-	if (position == -1)
-		cout <<x << " is not present in the array";
+	int pos = LinearSearch(arr, n, x);
+	if (pos == -1)
+		cout <<x << " : not present in the array";
 	else
-		cout << x<< " found at position " << position;
+		cout << x<< "  : found at position : " << pos;
 
 	return 0;
 }
