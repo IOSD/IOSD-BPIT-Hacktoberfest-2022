@@ -10,7 +10,7 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: rgb(99, 4, 47);
+  background: #9B708E;
 
 }.wrapper{
     height: 400px;
